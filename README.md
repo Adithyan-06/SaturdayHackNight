@@ -32,7 +32,9 @@
    - Interactive cards for each idea
    - Expandable details view
    - Visual indicators for key metrics
-2. Embed video of project demo
+2.
+
+
 ## Libraries used
 ### Frontend
 - React + TypeScript - 19.1
@@ -46,6 +48,33 @@
 - Uvicorn - 0.27
 - Python - 3.11
 ## How to configure
-Instructions for setting up project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/hackathon-idea-generator.git
+   cd frontend # Set up frontend
+   cd backend  # Set up backend
+   ```
+
 ## How to Run
-Instructions for running
+```bash
+   cd frontend #setup frontend
+   npm install
+   # OR
+   yarn install
+   # OR
+   pnpm install
+   #to run the frontend
+   npm run dev
+   # OR
+   yarn dev
+   # OR
+   pnpm dev
+```
+```bash
+   cd backend  # Set up backend
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate    # Windows
+   pip install -r requirements.txt
+   echo "GOOGLE_API_KEY=your_api_key_here" > .env #Configure environment variables
+   uvicorn main:app --reload # to run
