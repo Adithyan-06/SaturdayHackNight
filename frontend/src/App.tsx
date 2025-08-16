@@ -78,7 +78,7 @@ const handleGenerate = async () => {
   setIdeas([]);
   setExpandedIdea(null);
   try {
-    const response = await axios.post('http://localhost:8000/generate-ideas', formData);
+    const response = await axios.post('https://saturdayhacknight.onrender.com/generate-ideas', formData);
     
     // Ensure we have an array of ideas
     if (!Array.isArray(response.data?.ideas)) {
