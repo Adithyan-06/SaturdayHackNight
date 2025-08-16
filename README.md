@@ -12,7 +12,7 @@
 
 ## Team members
 1. [Srinanth M V](https://github.com/Srinanth)
-2. [Adhithyan M](https://github.com/Adithyan-06)
+2. [Adithyan M](https://github.com/Adithyan-06)
 ## Link to product walkthrough
 [link to video](Link Here)
 ## How it Works ?
