@@ -22,12 +22,6 @@ interface HackathonIdea {
   key_features?: string[];
 }
 
-const TIME_LIMITS = [
-  { value: '24h', label: '24 Hours' },
-  { value: '48h', label: '48 Hours' },
-  { value: '72h', label: '72 Hours' },
-  { value: '1week', label: '1 Week' }
-];
 
 const HACKATHON_LEVELS = [
   { value: 'international', label: 'International' },
@@ -179,7 +173,7 @@ function App() {
                   value={formData.time_limit}
                   onChange={(e) => {
                     const value = Math.max(0, parseInt(e.target.value) || 0);
-                    handleInputChange('time_limit', value % 2 === 0 ? value : value - 1);
+                    handleInputChange('time_limit', String(value % 2 === 0 ? value : value - 1));
                   }}
                   className="w-full p-4 border-2 border-gray-700 rounded-2xl focus:border-blue-500 focus:outline-none transition-colors duration-200 text-gray-100 bg-gray-900/50 appearance-none"
                 />
@@ -187,14 +181,14 @@ function App() {
                   <button
                     type="button"
                     className="text-gray-400 hover:text-blue-400 focus:outline-none"
-                    onClick={() => handleInputChange('time_limit', (parseInt(formData.time_limit) || 0) + 2)}
+                    onClick={() => handleInputChange('time_limit', String((parseInt(formData.time_limit) || 0) + 2))}
                   >
                     <ChevronUp className="w-5 h-5" />
                   </button>
                   <button
                     type="button"
                     className="text-gray-400 hover:text-blue-400 focus:outline-none"
-                    onClick={() => handleInputChange('time_limit', Math.max(0, (parseInt(formData.time_limit) || 0) - 2))}
+                    onClick={() => handleInputChange('time_limit', String(Math.max(0, (parseInt(formData.time_limit) || 0) - 2)))}
                   >
                     <ChevronDown className="w-5 h-5" />
                   </button>
