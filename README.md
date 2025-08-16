@@ -6,18 +6,45 @@
 
 
 
-# Project Name
-Long Description about project. This project do that. This project is awesome...
+# IdeaGen 💡⚡
+
+> An AI-powered platform that generates tailored hackathon project ideas based on your constraints (tech stack, time limit, difficulty level, etc.)
+
 ## Team members
 1. [Srinanth M V](https://github.com/Srinanth)
 2. [Adhithyan M](https://github.com/Adithyan-06)
 ## Link to product walkthrough
 [link to video](Link Here)
 ## How it Works ?
-1. Explaining the working of project
+1. **User Inputs Parameters**:
+   - Project context/theme
+   - Time limit (24h, 48h, etc.)
+   - Hackathon level (local to international)
+   - Tech stack preference
+   - AI/ML requirement toggle
+
+2. **AI Processing**:
+   - Gemini AI processes inputs
+   - Generates 10-15 tailored ideas
+   - Returns structured JSON response
+
+3. **Beautiful Display**:
+   - Interactive cards for each idea
+   - Expandable details view
+   - Visual indicators for key metrics
 2. Embed video of project demo
 ## Libraries used
-Library Name - Version
+### Frontend
+- React + TypeScript - 19.1
+- Tailwind CSS - 4.1
+- Axios - 1.11
+- Lucide React (Icons) - 0.53
+
+### Backend
+- FastAPI - 0.116
+- Google Gemini AI - 1.30
+- Uvicorn - 0.27
+- Python - 3.11
 ## How to configure
 Instructions for setting up project
 ## How to Run
