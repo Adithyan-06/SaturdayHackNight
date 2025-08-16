@@ -14,7 +14,7 @@
 1. [Srinanth M V](https://github.com/Srinanth)
 2. [Adithyan M](https://github.com/Adithyan-06)
 ## Link to product walkthrough
-[link to video](Link Here)
+[link to video](https://drive.google.com/file/d/1poWcTHhnctEaBbCKRt6rUlfOSXaY1oYS/view?usp=drive_link)
 ## How it Works ?
 1. **User Inputs Parameters**:
    - Project context/theme
