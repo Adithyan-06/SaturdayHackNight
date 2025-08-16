@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Lightbulb, Clock, Globe, Zap, Code, Brain, Sparkles, ChevronRight, Star, Trophy, Clock as ClockIcon, Cpu } from 'lucide-react';
+import { Lightbulb, Clock, Globe, Zap, Code, Brain, Sparkles, ChevronRight, Star, Trophy, Clock as ClockIcon, Cpu ,  SquareCode, Bolt,Heart,Flame } from 'lucide-react';
 import axios from 'axios';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 
@@ -451,15 +451,55 @@ function App() {
               ))}
             </div>
 
-            <div className="mt-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white border border-blue-500/30">
-              <div className="max-w-2xl mx-auto text-center">
-                <h3 className="text-2xl font-bold mb-4">Ready to Build Your Next Winning Project?</h3>
-                <p className="mb-6 opacity-90">These AI-generated ideas are just the starting point. Pick your favorite and start coding!</p>
-                <button className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-md">
-                  Get Started with Development Resources
-                </button>
-              </div>
-            </div>
+                <div className="mt-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white border border-blue-500/30">
+                  <div className="max-w-2xl mx-auto text-center">
+                    <h3 className="text-2xl font-bold mb-4">Ready to Build Your Next Winning Project?</h3>
+                    <p className="mb-6 opacity-90">These AI-generated ideas are just the starting point. Pick your favorite and start coding!</p>
+                    
+                    <div className="flex flex-wrap justify-center gap-4 mb-6">
+                      <a 
+                        href="https://v0.dev" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all"
+                      >
+                        <SquareCode className="w-5 h-5" />
+                        v0.dev
+                      </a>
+                      <a 
+                        href="https://vercel.com/bolt" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all"
+                      >
+                        <Bolt className="w-5 h-5" />
+                        Vercel Bolt
+                      </a>
+                      <a 
+                        href="https://lovable.ai" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all"
+                      >
+                        <Heart className="w-5 h-5" />
+                        Lovable
+                      </a>
+                      <a 
+                        href="https://firebase.google.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-all"
+                      >
+                        <Flame className="w-5 h-5" />
+                        Firebase
+                      </a>
+                    </div>
+
+                    <button className="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-md">
+                      Get Started with Development Resources
+                    </button>
+                  </div>
+                </div>
           </div>
         )}
 
