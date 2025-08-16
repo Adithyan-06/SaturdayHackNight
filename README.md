@@ -32,7 +32,6 @@
    - Interactive cards for each idea
    - Expandable details view
    - Visual indicators for key metrics
-2.
 
 
 ## Libraries used
